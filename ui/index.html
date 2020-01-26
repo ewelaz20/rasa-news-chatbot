@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>News</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Tech Mag template project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.2/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<link rel="stylesheet" type="text/css" href="styles/chatbotStyle.css">
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/chatbot.js"></script>
+
+
+</head>
+<body>
+
+
+<div class="super_container">
+	
+	<header class="header">
+
+		<div class="header_content_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="header_content d-flex flex-row align-items-center justfy-content-start">
+							<div class="logo_container">
+								<a href="#">
+									<div class="logo"><span>N</span>ews</div>
+									<div class="logo_sub">News from the world</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Header Navigation & Search -->
+		<div class="header_nav_container" id="header">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="header_nav_content d-flex flex-row align-items-center justify-content-start">
+
+							<!-- Navigation -->
+							<nav class="main_nav">
+								<ul class="main_nav_list d-flex flex-row align-items-center justify-content-start">
+									<li><a href="index.html">Home</a></li>
+									<li><a href="#">Technology</a></li>
+									<li><a href="#">Innovation</a></li>
+									<li><a href="#">Sport</a></li>
+									<li><a href="#">Music</a></li>
+									<li><a href="#">Contact</a></li>
+								</ul>
+							</nav>
+
+							<div class="header_search_container ml-auto">
+								<div class="header_search">
+									<form action="#" id="header_search_form" class="header_search_form d-flex flex-row align-items-center justfy-content-start">
+										<div><div class="header_search_activation"><i class="fa fa-search" aria-hidden="true"></i></div></div>
+										<input type="text" class="header_search_input" placeholder="Search" required="required">
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>		
+		</div>
+	</header>
+
+
+
+	<!-- Home -->
+
+	<div class="home">
+
+		<!-- Home Slider -->
+		<div class="home_slider_container">
+			<div class="owl-carousel owl-theme home_slider">
+				<!-- Slide -->
+				<div class="owl-item home_slider_item">
+					<div class="background_image" style="background-image:url(images/home_slider.jpg)"></div>
+					<div class="home_slider_content text-center">
+						<div class="home_slider_content_inner" data-animation-in="fadeIn" data-animation-out="animate-out fadeOut">
+							<div class="home_category"><a>Technology</a></div>
+							<div class="home_title">Read some news</div>
+							<div class="home_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae sapien porttitor, dignissim quam sit amet, aliquam lorem. Fusce id ligula non risus mollis consectetur</div>
+							<div class="home_button trans_200" id="botIcon" ><a>Chat with bot</a></div>
+						</div>
+					</div>
+				</div>
+				<!-- Slide -->
+				<div class="owl-item home_slider_item">
+					<div class="background_image" style="background-image:url(images/home_slider.jpg)"></div>
+					<div class="home_slider_content text-center">
+						<div class="home_slider_content_inner" data-animation-in="fadeIn" data-animation-out="animate-out fadeOut">
+							<div class="home_category"><a>Sport</a></div>
+							<div class="home_title">Read some news</div>
+							<div class="home_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae sapien porttitor, dignissim quam sit amet, aliquam lorem. Fusce id ligula non risus mollis consectetur</div>
+							<div class="home_button trans_200" id="botIco" ><a>Chat with bot</a></div>
+						</div>
+					</div>
+				</div>
+				<!-- Slide -->
+				<div class="owl-item home_slider_item">
+					<div class="background_image" style="background-image:url(images/home_slider.jpg)"></div>
+					<div class="home_slider_content text-center">
+						<div class="home_slider_content_inner" data-animation-in="fadeIn" data-animation-out="animate-out fadeOut">
+							<div class="home_category"><a>Music</a></div>
+							<div class="home_title">Read some news</div>
+							<div class="home_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae sapien porttitor, dignissim quam sit amet, aliquam lorem. Fusce id ligula non risus mollis consectetur</div>
+							<div class="home_button trans_200" id="botIco" ><a>Chat with bot</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Home Slider Navigation -->
+			<div class="home_slider_nav home_slider_prev trans_200"><i class="fa fa-angle-left trans_200" aria-hidden="true"></i></div>
+			<div class="home_slider_nav home_slider_next trans_200"><i class="fa fa-angle-right trans_200" aria-hidden="true"></i></div>
+		</div>
+	</div>
+
+	
+
+<!-- chatbot code -->
+
+<div class="chatCont" id="chatCont">
+        <div class="bot_profile">
+               
+            <div class="close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div id="result_div" class="resultDiv"></div>
+        <div class="chatForm" id="chat-div">
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <input type="text" id="chat-input" autocomplete="off" placeholder="Start Typing here..."
+                class="form-control bot-txt" />
+        </div>
+    </div>
+
+	
+
+</div>
+
+</body>
+</html>

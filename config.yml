@@ -1,0 +1,24 @@
+language: en
+pipeline:
+- model: en_core_web_sm
+  name: SpacyNLP
+- name: SpacyTokenizer
+- name: SpacyEntityExtractor
+  dimensions:
+  - GPE
+- name: CRFEntityExtractor
+- name: EntitySynonymMapper
+- name: CountVectorsFeaturizer
+  token_pattern: (?u)\b\w+\b
+- name: EmbeddingIntentClassifier
+policies:
+- name: MemoizationPolicy
+  max_history: 10
+- name: KerasPolicy
+  epochs: 100
+  max_history: 10
+- name: FallbackPolicy
+  nlu_threshold: 0.7
+  core_threshold: 0.3
+  fallback_action_name: action_default_fallback
+- name: FormPolicy

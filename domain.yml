@@ -1,0 +1,66 @@
+intents:
+- fettle
+- notunderstanding
+- inform
+- getNews
+- thank_you
+- greet
+- deny
+- affirm
+- bye
+- bot_identity
+- bot_general
+- 'deny:'
+entities:
+- topic_news
+slots:
+  requested_slot:
+    type: unfeaturized
+  topic_news:
+    type: text
+templates:
+  utter_acknowledge_notunderstanding:
+  - text: Sounds like I'm not understanding you. Sorry about that!
+  utter_ask_topic_news:
+  - text: Please give me a topic or keyword on which you would like to know the latest
+      updates in.
+  utter_confirm_if_service_is_correct:
+  - text: I hope you found what you were looking for!  Are you satisfied?
+  - text: I hope I done a good job and you found what you were looking for! Are you
+      satisfied?
+  utter_service_not_good:
+  - text: I'm so sory. Can I do something else for you?
+  utter_end:
+  - text: Good bye
+  - text: Bye
+  - text: Bye! See you soon...
+  - text: Bye bye
+  - text: until next time...
+  utter_hello:
+  - text: Hello! How are you?
+  utter_bot_help:
+  - text: How can I help you?
+  utter_reply_bot_general:
+  - text: I'm good, thank you for asking. How can I help you?
+  - text: I'm great! Thanks for asking. How can I help you?
+  utter_reply_bot_identity:
+  - text: I'm a bot. I will help you with getting some news.
+  utter_welcome:
+  - text: You're welcome!
+  utter_default:
+  - text: Sorry, I did not understand you, please try ask me something else.
+actions:
+- handle_out_of_scope
+- utter_confirm_if_service_is_correct
+- utter_end
+- utter_hello
+- utter_reply_bot_general
+- utter_reply_bot_identity
+- utter_welcome
+- utter_default
+- utter_service_not_good
+- utter_ask_topic_news
+- utter_acknowledge_notunderstanding
+- utter_bot_help
+forms:
+- get_news
